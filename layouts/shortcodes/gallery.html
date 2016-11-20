@@ -1,0 +1,13 @@
+<div class="clearfix">
+{{ if .IsNamedParams }}
+{{ else }}
+    {{- $url := .Get 0 -}}
+    {{- $path := (print "./static/" $url) -}}
+    {{- $files := readDir $path -}}
+    {{- range $files }}
+        <a href="{{ $url }}{{ .Name }}" data-lightbox="gallery" class="d-block float-xs-left gallery-link">
+            <img src="{{ $url }}{{ .Name }}" class="gallery-thumbnail">
+        </a>
+    {{- end }}
+{{ end }}
+</div>

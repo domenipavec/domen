@@ -1,0 +1,9 @@
+{{ if .IsNamedParams }}
+    <a href="{{ .Get "src" }}" data-lightbox="article" class="d-block">
+        <img src="{{ .Get "src" }}" class="img-thumbnail domen-thumbnail{{ if .Get "float" }} float-xs-{{ .Get "float" }}{{ end }}">
+    </a>
+{{ else }}
+    <a href="{{ .Get 0 }}" data-lightbox="article" class="d-block">
+        <img src="{{ .Get 0 }}" class="img-thumbnail domen-thumbnail">
+    </a>
+{{ end }}

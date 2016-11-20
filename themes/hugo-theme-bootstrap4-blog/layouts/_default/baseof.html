@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+
+    <head>
+        {{ partial "head-meta.html" . }}
+
+        <base href="{{ .Site.BaseURL }}">
+        <link rel="canonical" href="{{ .Permalink }}">
+
+        <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+
+        {{ "<!-- combined, minified CSS -->" | safeHTML }}
+        <link href="{{ .Site.BaseURL }}css/style.css" rel="stylesheet">
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/css/lightbox.min.css" rel="stylesheet">
+
+        {{ "<!-- RSS 2.0 feed -->" | safeHTML }}
+        <link href="{{ .Site.RSSLink }}" type="application/rss+xml" rel="alternate">
+
+        {{ template "_internal/google_analytics_async.html" . }}
+    </head>
+
+    <body>
+
+        <div class="blog-masthead">
+            <div class="container">
+                <nav class="nav blog-nav">
+                    {{- $currentNode := . -}}
+                    {{ range .Site.Menus.main }}
+                    <a class="nav-link {{ if or (eq $currentNode.URL .URL) (in $currentNode.Params.categories .Name) }}active{{end}}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+                    {{ end }}
+                    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+                    {{- $url := (print ("/categories/" | relLangURL) ($name | urlize) "/") -}}
+                    <a class="nav-link {{ if or (eq $currentNode.URL $url) (in $currentNode.Params.categories $name) }}active{{end}}" href="{{ $url }}">{{ $name }}</a>
+                    {{ end }}
+                    {{ if .IsTranslated }}
+                        {{ range .Translations }}
+                            <a class="nav-link float-xs-right" href="{{ .Permalink }}">{{ if eq .Lang "en" }}ENG{{ else }}SLO{{ end }}</a>
+                        {{ end }}
+                    {{ else }}
+                        {{ if eq .Lang "en" }}
+                            <a class="nav-link float-xs-right" href="/sl/">SLO</a>
+                        {{ else }}
+                            <a class="nav-link float-xs-right" href="/en/">ENG</a>
+                        {{ end }}
+                    {{ end }}
+                </nav>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 blog-main">
+
+                    {{ block "main" . }}
+                    <!-- The part of the page that begins to differ between templates -->
+                    {{ end }}
+
+                </div> {{ "<!-- /.blog-main -->" | safeHTML }}
+
+                {{ partial "sidebar.html" . }}
+
+            </div> {{ "<!-- /.row -->" | safeHTML }}
+        </div> {{ "<!-- /.container -->" | safeHTML }}
+
+        <footer class="blog-footer">
+            <p>
+            {{ if .Site.Copyright }}
+            {{ .Site.Copyright | markdownify }}
+            {{ else }}
+            Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
+            {{ end }}
+            </p>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox-plus-jquery.min.js"></script>
+
+    </body>
+
+</html>

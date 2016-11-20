@@ -1,0 +1,11 @@
+version: '2'
+services:
+  domen:
+    image: docker.ipavec.net/domen
+    build: .
+    tty: true
+    ports:
+      - 8000:80
+    volumes:
+      - ./public:/usr/share/nginx/html
+

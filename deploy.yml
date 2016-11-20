@@ -1,0 +1,17 @@
+#!/usr/bin/env ansible-playbook
+---
+- hosts: ubuntu-01
+  remote_user: domen
+  tasks:
+  - name: Deploying domen
+    docker:
+      name: domen-hugo
+      image: docker.ipavec.net/domen
+      pull: always
+      state: reloaded
+      restart_policy: always
+      net: bridge
+      env:
+        VIRTUAL_HOST: domen.ipavec.net
+        LETSENCRYPT_HOST: domen.ipavec.net
+        LETSENCRYPT_EMAIL: domen@ipavec.net

@@ -1,0 +1,48 @@
+baseurl = "https://domen.ipavec.net/"
+languageCode = "en-us"
+
+theme = "hugo-theme-bootstrap4-blog"
+pygmentsuseclasses = true
+
+disqusShortname = "domenipavecsblog"
+googleAnalytics = "UA-6928536-7"
+
+DefaultContentLanguage = "en"
+DefaultContentLanguageInSubdir = true
+
+preservetaxonomynames = true
+
+copyright = '<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Web contents</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://domen.ipavec.net" property="cc:attributionName" rel="cc:attributionURL">Domen Ipavec</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.'
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+[Params]
+Author = "Domen Ipavec"
+
+[permalinks]
+post = "/:filename"
+
+[Params.sidebar]
+about = '<img src="/images/domen.jpg" class="img-fluid rounded-circle"><h3>Domen Ipavec</h3><a href="https://github.com/matematik7"><i class="fa fa-github fa-fw fa-lg" aria-hidden="true"></i> matematik7</a><br><a href="mailto:&#x64;&#x6f;&#x6d;&#x65;&#x6e;&#x40;&#x69;&#x70;&#x61;&#x76;&#x65;&#x63;&#x2e;&#x6e;&#x65;&#x74;"><i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i> &#x64;&#x6f;&#x6d;&#x65;&#x6e;&#x40;&#x69;&#x70;&#x61;&#x76;&#x65;&#x63;&#x2e;&#x6e;&#x65;&#x74;</a>'
+
+[Languages]
+[Languages.en]
+weight = 1
+title = "Domen Ipavec's Blog"
+
+[[Languages.en.menu.main]]
+url = "/en/"
+name = "Home page"
+weight = 0
+
+[Languages.sl]
+weight = 2
+title = 'Domen Ipavec'
+copyright = '<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Spletne vsebine</span> <a xmlns:cc="http://creativecommons.org/ns#" href="https://domen.ipavec.net" property="cc:attributionName" rel="cc:attributionURL">Domna Ipavca</a> so pod <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.'
+
+[[Languages.sl.menu.main]]
+url = "/sl/"
+name = "Domača stran"
+weight = 0

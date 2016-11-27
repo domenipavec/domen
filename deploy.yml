@@ -12,6 +12,6 @@
       restart_policy: always
       net: bridge
       env:
-        VIRTUAL_HOST: domen.ipavec.net
-        LETSENCRYPT_HOST: domen.ipavec.net
+        VIRTUAL_HOST: domen.ipavec.net,ipavec.net,www.ipavec.net
+        LETSENCRYPT_HOST: domen.ipavec.net,ipavec.net,www.ipavec.net
         LETSENCRYPT_EMAIL: domen@ipavec.net

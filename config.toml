@@ -21,11 +21,26 @@ tag = "tags"
 [Params]
 Author = "Domen Ipavec"
 
+[social]
+twitter = "DomenIpavec"
+
 [permalinks]
 post = "/:filename"
 
 [Params.sidebar]
-about = '<img src="/images/domen.jpg" class="img-fluid rounded-circle"><h3>Domen Ipavec</h3><a href="https://github.com/matematik7"><i class="fa fa-github fa-fw fa-lg" aria-hidden="true"></i> matematik7</a><br><a href="mailto:&#x64;&#x6f;&#x6d;&#x65;&#x6e;&#x40;&#x69;&#x70;&#x61;&#x76;&#x65;&#x63;&#x2e;&#x6e;&#x65;&#x74;"><i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i> &#x64;&#x6f;&#x6d;&#x65;&#x6e;&#x40;&#x69;&#x70;&#x61;&#x76;&#x65;&#x63;&#x2e;&#x6e;&#x65;&#x74;</a>'
+about = '''
+<img src="/images/domen.jpg" class="img-fluid rounded-circle">
+<h3>Domen Ipavec</h3>
+<a href="https://github.com/matematik7" title="Github">
+	<i class="fa fa-github fa-fw fa-lg" aria-hidden="true"></i> matematik7
+</a><br>
+<a href="https://twitter.com/DomenIpavec" title="Twitter">
+	<i class="fa fa-twitter fa-fw fa-lg" aria-hidden="true"></i> @DomenIpavec
+</a><br>
+<a href="mailto:&#x64;&#x6f;&#x6d;&#x65;&#x6e;&#x40;&#x69;&#x70;&#x61;&#x76;&#x65;&#x63;&#x2e;&#x6e;&#x65;&#x74;">
+	<i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i> &#x64;&#x6f;&#x6d;&#x65;&#x6e;&#x40;&#x69;&#x70;&#x61;&#x76;&#x65;&#x63;&#x2e;&#x6e;&#x65;&#x74;
+</a>
+'''
 
 [Languages]
 [Languages.en]

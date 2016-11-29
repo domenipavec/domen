@@ -4,7 +4,7 @@ Title = "Lighthouse"
 draft = false
 categories = ["Electronics"]
 tags = ["Tindie"]
-image = "/images/electronics/lighthouse/lighthouse.jpg"
+images = ["/images/electronics/lighthouse/lighthouse.jpg"]
 +++
 
 {{< image src="/images/electronics/lighthouse/lighthouse.jpg" float="left" >}}

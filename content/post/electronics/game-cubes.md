@@ -4,7 +4,7 @@ title = "Game cubes"
 draft = false
 categories = ["Electronics"]
 tags = ["AVR"]
-image = "/images/electronics/game-cubes/gallery/elektronski-goli-29.JPG"
+images = ["/images/electronics/game-cubes/gallery/elektronski-goli-29.JPG"]
 +++
 
 {{< image src="/images/electronics/game-cubes/gallery/elektronski-goli-29.JPG" float="left" >}}

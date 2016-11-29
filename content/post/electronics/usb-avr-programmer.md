@@ -4,7 +4,7 @@ title = "USB AVR programmer"
 draft = false
 categories = ["Electronics"]
 tags = ["AVR"]
-image = "/images/electronics/usb-avr-programmer/top.JPG"
+images = ["/images/electronics/usb-avr-programmer/top.JPG"]
 +++
 
 I've already had a programmer for Atmel's AVR microcontrollers,

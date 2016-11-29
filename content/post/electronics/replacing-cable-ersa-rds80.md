@@ -3,7 +3,7 @@ date = "2012-04-29T23:30:35+01:00"
 title = "Replacing cable - Ersa RDS80"
 draft = false
 categories = ["Electronics"]
-image = "/images/electronics/replacing-cable-ersa/ersa-rds80.jpg"
+images = ["/images/electronics/replacing-cable-ersa/ersa-rds80.jpg"]
 +++
 
 {{< image src="/images/electronics/replacing-cable-ersa/ersa-rds80.jpg" float="left" >}}

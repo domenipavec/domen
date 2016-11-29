@@ -4,7 +4,7 @@ title = "Temperature alarm for boiling milk"
 categories = ["Electronics"]
 tags = ["AVR", "1-wire", "DS18B20", "HD44780"]
 draft = false
-image = "/images/electronics/temperature-alarm/image2.JPG"
+images = ["/images/electronics/temperature-alarm/image2.JPG"]
 +++
 
 {{< image src="/images/electronics/temperature-alarm/image2.JPG" float="left" >}}

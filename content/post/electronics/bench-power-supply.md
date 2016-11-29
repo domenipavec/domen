@@ -3,7 +3,7 @@ date = "2012-09-05T02:08:35+01:00"
 title = "Bench power supply"
 draft = false
 categories = ["Electronics"]
-image = "/images/electronics/supply/napajalnik1.jpg"
+images = ["/images/electronics/supply/napajalnik1.jpg"]
 +++
 <div class="clearfix">
 {{< image src="/images/electronics/supply/napajalnik1.jpg" float="left" >}}

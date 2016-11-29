@@ -4,7 +4,7 @@ title = "Lego robot"
 draft = false
 categories = ["Electronics"]
 tags = ["AVR"]
-image = "/images/electronics/lego-robot/DSC_0075.JPG"
+images = ["/images/electronics/lego-robot/DSC_0075.JPG"]
 +++
 
 {{< image src="/images/electronics/lego-robot/DSC_0075.JPG" float="left" >}}

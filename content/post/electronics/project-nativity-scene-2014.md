@@ -4,7 +4,7 @@ title = "Project nativity scene 2014"
 draft = false
 categories = ["Electronics"]
 tags = ["AVR", "Raspberry Pi", "I2C"]
-image = "/images/electronics/jaslice/celota.jpg"
+images = ["/images/electronics/jaslice/celota.jpg"]
 +++
 
 {{< image src="/images/electronics/jaslice/celota.jpg" >}}

@@ -4,7 +4,7 @@ title = "Avr lpt programmer"
 draft = false
 categories = ["Electronics"]
 tags = ["AVR"]
-image = "/images/electronics/lpt-avr-programmer/slika.JPG"
+images = ["/images/electronics/lpt-avr-programmer/slika.JPG"]
 +++
 
 {{< image src="/images/electronics/lpt-avr-programmer/slika.JPG" float="left" >}}

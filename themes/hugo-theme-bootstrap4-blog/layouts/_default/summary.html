@@ -16,8 +16,8 @@
             {{ end }}
         </p>
     </header>
-    {{ if .Params.image }}
-        <img src="{{ .Params.image }}" class="img-thumbnail list-thumbnail">
+    {{ with .Params.images }}
+        <img src="{{ index . 0 }}" class="img-thumbnail list-thumbnail">
     {{ end }}
     {{ .Summary }}
     <a href='{{ .Permalink }}'>{{ i18n "readMore" }} →</a>

@@ -180,10 +180,18 @@ article img {
 .domen-thumbnail {
 	margin-left: 0;
 	margin-top: 0;
-	margin-right: 10px;
+	margin-right: 0;
 	margin-bottom: 10px;
 	max-width: 300px !important;
 	max-height: 300px;
+}
+
+.domen-thumbnail.float-xs-left {
+	margin-right: 10px;
+}
+
+.domen-thumbnail.float-xs-right {
+	margin-left: 10px;
 }
 
 .images-thumbnail {

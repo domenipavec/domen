@@ -5,9 +5,12 @@
     {{- $path := (print "./static/" $url) -}}
     {{- $files := readDir $path -}}
     {{- range $files }}
+
+    {{ if eq (len (findRE "\\.s[0-9]+\\.jpg$" .Name)) 0 }}
         <a href="{{ $url }}{{ .Name }}" data-lightbox="gallery" class="d-block float-xs-left gallery-link">
-            <img src="{{ $url }}{{ .Name }}" class="gallery-thumbnail">
+            <img src="{{ $url }}{{ .Name }}.s100.jpg" class="gallery-thumbnail">
         </a>
+    {{ end }}
     {{- end }}
 {{ end }}
 </div>

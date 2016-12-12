@@ -62,4 +62,4 @@ Here is a short video clip of the working traffic light:
 - Github repository: [traffic-light](https://github.com/matematik7/traffic-light)
 
 ## Images
-{{< images "/images/electronics/traffic-light/image1.jpg" "/images/electronics/traffic-light/image2.jpg" "/images/electronics/traffic-light/image3.jpg" "/images/electronics/traffic-light/image4.jpg" "/images/electronics/traffic-light/image5.jpg" "/images/electronics/traffic-light/image6.jpg" "/images/electronics/traffic-light/image7.jpg" "/images/electronics/traffic-light/image8.jpg" "/images/electronics/traffic-light/image9.jpg" "/images/electronics/traffic-light/image10.jpg" "/images/electronics/traffic-light/image11.jpg" >}}
+{{< gallery "/images/electronics/traffic-light/" >}}

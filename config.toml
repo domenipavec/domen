@@ -29,7 +29,7 @@ post = "/:filename"
 
 [Params.sidebar]
 about = '''
-<img src="/images/domen.jpg" class="img-fluid rounded-circle">
+<img src="/images/domen.jpg.s300.jpg" class="img-fluid rounded-circle">
 <h3>Domen Ipavec</h3>
 <a href="https://github.com/matematik7" title="Github">
 	<i class="fa fa-github fa-fw fa-lg" aria-hidden="true"></i> matematik7

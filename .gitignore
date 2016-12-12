@@ -3,3 +3,6 @@
 
 # npm for theme
 node_modules
+
+# processed thumbnails
+*.s[0-9]*.jpg

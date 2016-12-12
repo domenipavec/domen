@@ -17,7 +17,7 @@
         </p>
     </header>
     {{ with .Params.images }}
-        <img src="{{ index . 0 }}" class="img-thumbnail list-thumbnail">
+        <img src="{{ index . 0 }}.s150.jpg" class="img-thumbnail list-thumbnail">
     {{ end }}
     {{ .Summary }}
     <a href='{{ .Permalink }}'>{{ i18n "readMore" }} →</a>

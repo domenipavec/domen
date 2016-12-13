@@ -2,7 +2,7 @@
 
 sizes=(100 150 300)
 
-if [ $1 = "clean" ]; then
+if [ "$1" = "clean" ]; then
 	find ./static/ -type f -exec file {} \; | grep "\.s[0-9]\+\.jpg" | awk -F: '{if ($2 ~/image/) print $1}' | xargs rm
 	exit
 fi

@@ -5,7 +5,7 @@
     {{ partial "head-meta.html" . }}
 
     {{ block "schema-dot-org" . }}
-      <!-- schema.org metadata differs for Nodes and Pages -->
+    <!-- schema.org metadata differs for Nodes and Pages -->
     {{ end }}
 
     <link rel="canonical" href="{{ .Permalink }}">
@@ -30,7 +30,7 @@
 
     {{ "<!-- RSS 2.0 feed -->" | safeHTML }}
     {{ with .OutputFormats.Get "rss" -}}
-      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
 
     {{ template "_internal/google_analytics_async.html" . }}
@@ -48,11 +48,25 @@
     <div class="blog-masthead">
       <div class="container">
         <nav class="nav blog-nav">
-          <a class="nav-link {{ if .IsHome }}active{{ end }}" href="{{ .Site.BaseURL | absLangURL }}">{{ i18n "home" }}</a>
           {{- $currentPage := . -}}
-          {{ range .Site.Menus.navbar }}
-          {{ $menuURL := .URL | absLangURL }}
-          <a class="nav-link{{ if or ($currentPage.IsMenuCurrent "navbar" .) ($currentPage.HasMenuCurrent "navbar" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+          {{ range .Site.Menus.main }}
+          <a class="nav-link {{ if or (eq $currentPage.URL .URL) (in $currentPage.Params.categories .Name) }}active{{end}}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+          {{ end }}
+          {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+          {{- $url := (print ("/categories/" | relLangURL) ($name | urlize) "/") -}}
+          <a class="nav-link {{ if or (eq $currentPage.URL $url) (in $currentPage.Params.categories $name) }}active{{end}}" href="{{ $url }}">{{ $name | title | humanize }}</a>
+          {{ end }}
+          <div class="mr-auto"></div>
+          {{ if .IsTranslated }}
+          {{ range .Translations }}
+          <a class="nav-link" href="{{ .Permalink }}">{{ if eq .Lang "en" }}ENG{{ else }}SLO{{ end }}</a>
+          {{ end }}
+          {{ else }}
+          {{ if eq .Lang "en" }}
+          <a class="nav-link" href="/sl/">SLO</a>
+          {{ else }}
+          <a class="nav-link" href="/en/">ENG</a>
+          {{ end }}
           {{ end }}
         </nav>
       </div>

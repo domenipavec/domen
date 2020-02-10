@@ -1,0 +1,32 @@
+- id: about
+  translation: "O meni"
+
+- id: home
+  translation: "Domača stran"
+
+- id: recentPosts
+  translation: "Nedavni prispevki"
+
+- id: readMore
+  translation: "Več"
+
+- id: translations
+  translation: "Prevodi"
+
+- id: share
+  translation: "Deli"
+
+- id: paginatorPrevious
+  translation: "Prejšnja stran"
+
+- id: paginatorNext
+  translation: "Naslednja stran"
+
+- id: authoredBy
+  translation: "od"
+
+- id: postedIn
+  translation: "v"
+
+- id: comma
+  translation: ","

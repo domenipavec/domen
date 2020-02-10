@@ -8,7 +8,7 @@
   translation: "Letzte Beiträge"
 
 - id: readMore
-  translation: "Weiterlesen"
+  translation: "Weiterlesen →"
 
 - id: translations
   translation: "Übersetzungen"
@@ -17,7 +17,22 @@
   translation: "Teilen"
 
 - id: paginatorPrevious
-  translation: "Vorige Seite"
+  translation: "Vorherige Seite"
 
 - id: paginatorNext
   translation: "Nächste Seite"
+
+- id: cookieMessage
+  translation: "Diese Webseite benutzt Cookies."
+
+- id: cookieLink
+  translation: "Weitere Informationen"
+
+- id: cookieDismiss
+  translation: "OK"
+
+- id: backToTop
+  translation: "Zurück zum Anfang"
+
+- id: links
+  translation: "Links"
